@@ -23,4 +23,6 @@ public class GlobalConstants {
 
     private final String adminEmail = "admin@yourstore.com";
     private final String adminPassword = "admin";
+
+    private final String url = "https://demo.nopcommerce.com/";
 }
