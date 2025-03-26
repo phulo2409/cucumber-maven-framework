@@ -14,5 +14,6 @@ public class BasePageUI {
     public final static String PRODUCT_ATTRIBUTE_FLYOUT_CART = "Xpath=//div[@id='flyout-cart']//div[@class='attributes']";
     public final static String TOTAL_FLYOUT_CART = "Xpath=//div[@id='flyout-cart']//div[@class='totals']";
     public final static String COUNT_PRODUCT_FLYOUT_CART = "Xpath=//div[@id='flyout-cart']//div[@class='count']";
-
+    public final static String DYNAMIC_TEXTBOX = "Xpath=//label[text()='%s']/following-sibling::input";
+    public final static String DYNAMIC_MENU_ITEM = "Xpath=//div[@class='header-links']//a[text()='%s']";
 }

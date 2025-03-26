@@ -1,6 +1,7 @@
 package pageObjects;
 
 import org.openqa.selenium.WebDriver;
+import pageObjects.users.CommonPO;
 import pageObjects.users.dashboard.UserHomePO;
 import pageObjects.users.dashboard.UserSearchPO;
 import pageObjects.users.login.UserLoginPO;
@@ -26,6 +27,10 @@ public class PageGenerator {
 
     public UserSearchPO getUserSearch(WebDriver driver){
         return new UserSearchPO(driver);
+    }
+
+    public CommonPO getCommon(WebDriver driver){
+        return new CommonPO(driver);
     }
 
 }

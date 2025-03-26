@@ -4,7 +4,7 @@
 
     <test name="Run Gherkin">
         <classes>
-            <class name="com.nopcommerce.runners.RegisterTestRunner"/>
+            <class name="com.nopcommerce.runners.LoginTestRunner"/>
         </classes>
     </test>
 

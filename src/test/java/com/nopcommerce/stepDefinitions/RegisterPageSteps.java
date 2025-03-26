@@ -1,7 +1,10 @@
 package com.nopcommerce.stepDefinitions;
 
+import com.nopcommerce.commons.Context;
+import com.nopcommerce.commons.TestContext;
 import com.nopcommerce.hooks.Hooks;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
@@ -17,9 +20,11 @@ public class RegisterPageSteps {
     private NopCommerceData nopCommerceData;
     private FakerConfig fakerConfig;
     private String email;
+    private TestContext testContext;
 
-    public RegisterPageSteps(){
-        this.driver = Hooks.getDriver();
+    public RegisterPageSteps(TestContext testContext){
+        driver = Hooks.getDriver();
+        this.testContext = testContext;
         registerPage = PageGenerator.getPageGenerator().getUserRegisterPage(driver);
         nopCommerceData = NopCommerceData.getNopCommerceData();
         fakerConfig = FakerConfig.getFaker();
@@ -69,4 +74,9 @@ public class RegisterPageSteps {
     }
 
 
+    @Given("create an account successfully")
+    public void createAnAccountSuccessfully() {
+        registerPage.createAnAccount(nopCommerceData.getFirstName(), nopCommerceData.getLastName(), email, nopCommerceData.getCompany(), nopCommerceData.getPassword());
+        testContext.getDataContext().setContext(Context.EMAIL, email);
+    }
 }

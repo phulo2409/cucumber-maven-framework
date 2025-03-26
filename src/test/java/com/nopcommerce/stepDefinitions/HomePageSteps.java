@@ -7,11 +7,11 @@ import pageObjects.PageGenerator;
 import pageObjects.users.dashboard.UserHomePO;
 
 public class HomePageSteps {
-    WebDriver driver;
-    UserHomePO homePage;
+    private WebDriver driver;
+    private UserHomePO homePage;
 
     public HomePageSteps(){
-        this.driver = Hooks.getDriver();
+        driver = Hooks.getDriver();
         homePage = PageGenerator.getPageGenerator().getUserHomePage(driver);
     }
 
