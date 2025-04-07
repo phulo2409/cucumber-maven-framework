@@ -1,0 +1,31 @@
+{
+  "firstName": "Phu",
+  "lastName": "Lo",
+  "company": "Phu Lo Corp",
+  "password": "123456789",
+  "gender": "Male",
+  "country": "Vietnam",
+  "city": "Hồ Chí Minh",
+  "zipPostal": "700000",
+
+  "searchTest": {
+    "noResultValidation": "No products were found that matched your criteria.",
+    "lenovoThinkpadResult": "Lenovo Thinkpad X1 Carbon Laptop",
+    "appleSearch": "Apple MacBook Pro",
+    "categorySelect": "Computers",
+    "appleResult": "Apple Macbook Pro 13-inch"
+  },
+
+  "productItem": {
+    "lenovoItem": "Lenovo IdeaCentre",
+    "computerBreadcrumb": "Computers",
+    "desktopsBreadcrumb": "Desktops",
+    "notebookBreadcrumb": "Notebooks",
+    "buildProduct": "Build your own computer"
+  },
+  "adminServer": {
+    "guestsRole": "Guests",
+    "skuProduct": "LE_IC_600",
+    "productPrice500": "$500.00"
+  }
+}
